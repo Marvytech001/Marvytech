@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact MarvyTech Institution | Free Tech Training in Nigeria</title>
+<meta name="description" content="Contact MarvyTech Institution to ask about free technology skills training, course availability, registration, and partnership opportunities in Nigeria.">
+<meta name="keywords" content="contact MarvyTech, free tech training Nigeria, digital skills training, technology education contact">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230B1220%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 fill=%22%2322D3EE%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-weight=%22bold%22>M</text></svg>">
+
+<style>
+  :root{
+    --navy:#0B1220;
+    --blue:#2563EB;
+    --cyan:#22D3EE;
+    --lime:#A3E635;
+    --white:#FFFFFF;
+    --bg:#F5F7FB;
+    --muted:#64748B;
+    --radius:16px;
+    --shadow: 0 10px 30px rgba(11,18,32,0.08);
+    --shadow-hover: 0 16px 40px rgba(11,18,32,0.14);
+    --transition: all 0.25s ease;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--navy);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+
+  a{text-decoration:none; color:inherit;}
+  ul{list-style:none; margin:0; padding:0;}
+  img,svg{display:block; max-width:100%;}
+
+  .container{
+    width:100%;
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* Focus states */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible{
+    outline:3px solid var(--cyan);
+    outline-offset:2px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ========== HEADER ========== */
+  header.site-header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    box-shadow:0 2px 12px rgba(11,18,32,0.06);
+  }
+
+  .nav-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 24px;
+    max-width:1180px;
+    margin:0 auto;
+  }
+
+  .logo-link{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:800;
+    font-size:1.05rem;
+    color:var(--navy);
+  }
+
+  .logo-link span{white-space:nowrap;}
+
+  nav.main-nav{
+    display:flex;
+    align-items:center;
+    gap:28px;
+  }
+
+  nav.main-nav a{
+    font-weight:600;
+    font-size:0.95rem;
+    color:var(--navy);
+    position:relative;
+    padding:6px 0;
+    transition:var(--transition);
+  }
+
+  nav.main-nav a:hover{color:var(--blue);}
+
+  nav.main-nav a.active{color:var(--blue);}
+  nav.main-nav a.active::after{
+    content:"";
+    position:absolute;
+    left:0; bottom:-2px;
+    width:100%;
+    height:3px;
+    background:var(--cyan);
+    border-radius:2px;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:12px 24px;
+    border-radius:50px;
+    font-weight:700;
+    font-size:0.95rem;
+    cursor:pointer;
+    border:2px solid transparent;
+    transition:var(--transition);
+    white-space:nowrap;
+  }
+
+  .btn-primary{
+    background:linear-gradient(135deg, var(--blue), var(--cyan));
+    color:var(--white);
+    box-shadow:0 8px 20px rgba(37,99,235,0.25);
+  }
+  .btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 26px rgba(37,99,235,0.35);
+  }
+
+  .btn-outline{
+    background:transparent;
+    border-color:var(--navy);
+    color:var(--navy);
+  }
+  .btn-outline:hover{
+    background:var(--navy);
+    color:var(--white);
+  }
+
+  .btn-whatsapp{
+    background:#25D366;
+    color:var(--white);
+    box-shadow:0 8px 20px rgba(37,211,102,0.3);
+  }
+  .btn-whatsapp:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 26px rgba(37,211,102,0.4);
+  }
+
+  .btn-lime{
+    background:var(--lime);
+    color:var(--navy);
+  }
+  .btn-lime:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 26px rgba(163,230,53,0.4);
+  }
+
+  .nav-register{
+    display:inline-flex;
+  }
+
+  .hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:8px;
+  }
+  .hamburger span{
+    width:26px;
+    height:3px;
+    background:var(--navy);
+    border-radius:3px;
+    transition:var(--transition);
+  }
+  .hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+  .hamburger.open span:nth-child(2){opacity:0;}
+  .hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+
+  @media (max-width: 960px){
+    nav.main-nav{
+      position:fixed;
+      top:70px;
+      left:0;
+      right:0;
+      background:var(--white);
+      flex-direction:column;
+      align-items:flex-start;
+      gap:0;
+      max-height:0;
+      overflow:hidden;
+      transition: max-height 0.3s ease;
+      box-shadow:0 10px 20px rgba(11,18,32,0.08);
+    }
+    nav.main-nav.open{
+      max-height:600px;
+    }
+    nav.main-nav a{
+      width:100%;
+      padding:16px 24px;
+      border-bottom:1px solid #EEF1F6;
+    }
+    nav.main-nav .nav-register{
+      padding:16px 24px;
+      width:100%;
+    }
+    nav.main-nav .nav-register .btn{width:100%;}
+    .hamburger{display:flex;}
+  }
+
+  /* ========== HERO ========== */
+  .page-hero{
+    background: linear-gradient(135deg, var(--navy) 0%, #142033 100%);
+    color:var(--white);
+    padding:70px 0 90px;
+    position:relative;
+    overflow:hidden;
+  }
+  .page-hero::before{
+    content:"";
+    position:absolute;
+    top:-80px;
+    right:-80px;
+    width:300px;
+    height:300px;
+    background:radial-gradient(circle, rgba(34,211,238,0.25), transparent 70%);
+    border-radius:50%;
+  }
+  .page-hero .container{position:relative; z-index:1;}
+  .page-hero h1{
+    font-size:clamp(2rem, 4.5vw, 2.8rem);
+    margin:0 0 16px;
+    font-weight:800;
+    max-width:720px;
+  }
+  .page-hero p{
+    font-size:1.1rem;
+    color:#CBD5E1;
+    max-width:620px;
+    margin:0;
+  }
+
+  /* ========== SECTIONS ========== */
+  section{
+    padding:70px 0;
+  }
+  .section-tight{padding:50px 0;}
+
+  .section-title{
+    font-size:clamp(1.6rem, 3vw, 2.1rem);
+    font-weight:800;
+    margin:0 0 12px;
+    color:var(--navy);
+  }
+  .section-sub{
+    color:var(--muted);
+    max-width:640px;
+    margin:0 0 40px;
+    font-size:1.05rem;
+  }
+
+  /* ========== CONTACT CARDS ========== */
+  .contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:28px;
+  }
+
+  .contact-card{
+    background:var(--white);
+    border-radius:var(--radius);
+    padding:32px 28px;
+    box-shadow:var(--shadow);
+    border:1px solid #EEF1F6;
+    transition:var(--transition);
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .contact-card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-hover);
+  }
+
+  .icon-circle{
+    width:58px;
+    height:58px;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg, var(--blue), var(--cyan));
+    color:var(--white);
+    flex-shrink:0;
+  }
+
+  .contact-card h3{
+    margin:0;
+    font-size:1.25rem;
+    font-weight:800;
+  }
+  .contact-card p{
+    margin:0;
+    color:var(--muted);
+    font-size:0.98rem;
+    flex-grow:1;
+  }
+  .contact-card .btn{
+    align-self:flex-start;
+    margin-top:6px;
+  }
+
+  /* ========== INFO STRIP ========== */
+  .info-strip{
+    background:var(--white);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border:1px solid #EEF1F6;
+    padding:36px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:28px;
+  }
+  .info-item{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+  }
+  .info-item .icon-circle{
+    width:46px; height:46px; border-radius:12px;
+    background:var(--bg);
+    color:var(--blue);
+  }
+  .info-item h4{
+    margin:0 0 4px;
+    font-size:1rem;
+    font-weight:700;
+  }
+  .info-item p, .info-item a{
+    margin:0;
+    color:var(--muted);
+    font-size:0.95rem;
+    word-break:break-word;
+  }
+  .info-item a:hover{color:var(--blue);}
+
+  /* ========== FORM SECTION ========== */
+  .form-section{
+    background:var(--white);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border:1px solid #EEF1F6;
+    padding:40px;
+  }
+
+  .form-note{
+    background:#FFFBEA;
+    border:1px solid #FDE68A;
+    color:#92400E;
+    padding:16px 18px;
+    border-radius:12px;
+    font-size:0.92rem;
+    margin-bottom:28px;
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+  }
+  .form-note svg{flex-shrink:0; margin-top:2px;}
+
+  .form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+  }
+  @media (max-width:720px){
+    .form-grid{grid-template-columns:1fr;}
+  }
+
+  .field{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .field.full{grid-column:1 / -1;}
+
+  .field label{
+    font-weight:700;
+    font-size:0.92rem;
+    color:var(--navy);
+  }
+  .field label .req{color:#DC2626;}
+
+  .field input,
+  .field textarea{
+    padding:13px 16px;
+    border:1.5px solid #E2E8F0;
+    border-radius:10px;
+    font-size:0.98rem;
+    font-family:inherit;
+    color:var(--navy);
+    background:var(--bg);
+    transition:var(--transition);
+  }
+  .field input:focus,
+  .field textarea:focus{
+    border-color:var(--blue);
+    background:var(--white);
+    outline:none;
+  }
+  .field textarea{resize:vertical; min-height:110px;}
+
+  .error-msg{
+    color:#DC2626;
+    font-size:0.85rem;
+    display:none;
+  }
+  .field.invalid input,
+  .field.invalid textarea{
+    border-color:#DC2626;
+  }
+  .field.invalid .error-msg{display:block;}
+
+  .form-actions{
+    margin-top:28px;
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+
+  .confirm-msg{
+    margin-top:20px;
+    background:#ECFDF5;
+    border:1px solid #A7F3D0;
+    color:#065F46;
+    padding:16px 18px;
+    border-radius:12px;
+    font-size:0.95rem;
+    display:none;
+  }
+  .confirm-msg.show{display:block;}
+
+  /* ========== PARTNERSHIP BANNER ========== */
+  .partner-banner{
+    background: linear-gradient(135deg, #0B1220, #16233B);
+    color:var(--white);
+    border-radius:var(--radius);
+    padding:44px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .partner-banner h3{
+    margin:0 0 10px;
+    font-size:1.5rem;
+    font-weight:800;
+  }
+  .partner-banner p{
+    margin:0;
+    color:#CBD5E1;
+    max-width:500px;
+  }
+
+  /* ========== FOOTER ========== */
+  footer.site-footer{
+    background:var(--navy);
+    color:#CBD5E1;
+    padding:60px 0 24px;
+    margin-top:40px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr 1.4fr;
+    gap:36px;
+    margin-bottom:40px;
+  }
+  @media (max-width:860px){
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:520px){
+    .footer-grid{grid-template-columns:1fr;}
+  }
+
+  .footer-brand{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .footer-brand .logo-link{color:var(--white);}
+  .footer-brand p{
+    color:#94A3B8;
+    font-size:0.92rem;
+    max-width:300px;
+    margin:0;
+  }
+  .footer-tagline{
+    color:var(--cyan);
+    font-weight:700;
+    font-size:0.9rem;
+  }
+
+  footer h5{
+    color:var(--white);
+    font-size:1rem;
+    margin:0 0 18px;
+    font-weight:700;
+  }
+  footer ul li{margin-bottom:10px;}
+  footer ul li a{
+    color:#94A3B8;
+    font-size:0.92rem;
+    transition:var(--transition);
+  }
+  footer ul li a:hover{color:var(--cyan);}
+
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    padding-top:24px;
+    text-align:center;
+    font-size:0.85rem;
+    color:#64748B;
+  }
+
+  /* ========== WHATSAPP FLOAT ========== */
+  .wa-float{
+    position:fixed;
+    bottom:24px;
+    right:24px;
+    z-index:999;
+    background:#25D366;
+    color:var(--white);
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 26px rgba(37,211,102,0.4);
+    transition:var(--transition);
+  }
+  .wa-float:hover{transform:scale(1.08);}
+
+  @media (max-width:480px){
+    .wa-float{width:52px; height:52px; bottom:16px; right:16px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo-link" aria-label="MarvyTech Institution home">
+      <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="100" height="100" rx="22" fill="#0B1220"/>
+        <path d="M22 72V30L38 50L50 34L62 50L78 30V72" stroke="url(#gradLogoContact)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="78" cy="30" r="5" fill="#A3E635"/>
+        <defs>
+          <linearGradient id="gradLogoContact" x1="22" y1="30" x2="78" y2="72" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#22D3EE"/>
+            <stop offset="1" stop-color="#2563EB"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span>MarvyTech Institution</span>
+    </a>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About Us</a>
+      <a href="resources.html">Learning Resources</a>
+      <a href="student-portal.html">Student Portal</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+      <span class="nav-register">
+        <a href="register.html" class="btn btn-primary">Register for Free</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="page-hero">
+  <div class="container">
+    <h1>We Would Love to Hear From You</h1>
+    <p>Have a question about our courses, training availability, registration, or possible partnerships? Get in touch with us.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT OPTIONS ============ -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Ways to Reach Us</h2>
+    <p class="section-sub">Choose the option that works best for you. We aim to respond as soon as we are able to.</p>
+
+    <div class="contact-grid">
+
+      <!-- WhatsApp -->
+      <div class="contact-card">
+        <div class="icon-circle" style="background:#25D366;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.07-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" stroke="#fff" stroke-width="1.5"/>
+            <path d="M8.5 9.5c0 3 2.5 5.5 5.5 5.5.6 0 1-.1 1.3-.3.3-.2.5-.6.4-1l-.2-1-1.6-.5-.9 1c-1-.5-1.8-1.3-2.3-2.3l1-.9-.5-1.6-1-.2c-.4-.1-.8.1-1 .4-.2.3-.3.7-.3 1.3z" fill="#fff"/>
+          </svg>
+        </div>
+        <h3>WhatsApp</h3>
+        <p>Ask us about courses, registration, and training availability. We typically respond fastest here.</p>
+        <a class="btn btn-whatsapp" id="waChatBtn" href="https://wa.me/2348103889326?text=Hello%20MarvyTech%20Institution.%20I%20would%20like%20to%20enquire%20about%20your%20free%20technology%20training%20programmes." target="_blank" rel="noopener">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Email -->
+      <div class="contact-card">
+        <div class="icon-circle">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2" stroke="#fff" stroke-width="1.6"/>
+            <path d="M3 7l9 6 9-6" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Email</h3>
+        <p>Send us questions, formal enquiries, or anything you would prefer to put in writing.</p>
+        <a class="btn btn-primary" href="mailto:marvellousoluwanifemi19@gmail.com">Send an Email</a>
+      </div>
+
+      <!-- Course enquiries -->
+      <div class="contact-card">
+        <div class="icon-circle" style="background:linear-gradient(135deg,#A3E635,#22D3EE); color:#0B1220;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 19.5V6a2 2 0 012-2h11a2 2 0 012 2v13.5" stroke="#0B1220" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 19.5A2.5 2.5 0 016.5 17H19" stroke="#0B1220" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 7h8M8 11h8" stroke="#0B1220" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Course Enquiries</h3>
+        <p>Ask about programme availability, training methods, and what each course may require to get started.</p>
+        <a class="btn btn-outline" href="courses.html">View Courses</a>
+      </div>
+
+      <!-- Partnerships -->
+      <div class="contact-card">
+        <div class="icon-circle" style="background:#0B1220;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="8" cy="8" r="3" stroke="#22D3EE" stroke-width="1.6"/>
+            <circle cx="16" cy="16" r="3" stroke="#A3E635" stroke-width="1.6"/>
+            <path d="M10.2 9.8L13.8 14.2" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Partnerships</h3>
+        <p>Are you an organisation, educator, or individual interested in collaborating with us? We would like to hear your ideas.</p>
+        <a class="btn btn-outline" href="#partnerSection">Discuss a Partnership</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFICIAL DETAILS ============ -->
+<section class="section-tight" style="background:var(--white);">
+  <div class="container">
+    <h2 class="section-title">Official Contact Details</h2>
+    <p class="section-sub">These are the only official channels used by MarvyTech Institution. Please be cautious of any other contact details claiming to represent us.</p>
+
+    <div class="info-strip">
+      <div class="info-item">
+        <div class="icon-circle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7z" stroke="#2563EB" stroke-width="1.6"/><circle cx="12" cy="9" r="2.5" stroke="#2563EB" stroke-width="1.6"/></svg>
+        </div>
+        <div>
+          <h4>Organisation</h4>
+          <p>MarvyTech Institution</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-circle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 5h4l2 5-2.5 1.5a11 11 0 005 5L13 14l5 2v4a2 2 0 01-2 2A16 16 0 013 7a2 2 0 012-2z" stroke="#2563EB" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <h4>WhatsApp</h4>
+          <a href="https://wa.me/2348103889326" target="_blank" rel="noopener">0810 388 9326</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-circle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#2563EB" stroke-width="1.6"/><path d="M3 7l9 6 9-6" stroke="#2563EB" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:marvellousoluwanifemi19@gmail.com">marvellousoluwanifemi19@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-circle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7z" stroke="#2563EB" stroke-width="1.6"/></svg>
+        </div>
+        <div>
+          <h4>Location</h4>
+          <p>Nigeria</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT FORM (WhatsApp based) ============ -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Send Us a Quick Message</h2>
+    <p class="section-sub">This form does not send messages automatically. GitHub Pages cannot store or email form submissions on its own. When you submit, we will open a prefilled WhatsApp message for you to review and send yourself.</p>
+
+    <div class="form-section">
+      <div class="form-note">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M10.3 3.9L1.9 18a2 2 0 001.7 3h16.8a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z" stroke="#92400E" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <span>This website is currently a static site. Your message will not be saved in a database. Please press Send inside WhatsApp to complete the contact step, or use the email option instead.</span>
+      </div>
+
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="cName">Full Name <span class="req">*</span></label>
+            <input type="text" id="cName" name="cName" autocomplete="name" required>
+            <span class="error-msg">Please enter your full name.</span>
+          </div>
+
+          <div class="field">
+            <label for="cEmail">Email Address <span class="req">*</span></label>
+            <input type="email" id="cEmail" name="cEmail" autocomplete="email" required>
+            <span class="error-msg">Please enter a valid email address.</span>
+          </div>
+
+          <div class="field full">
+            <label for="cSubject">Subject <span class="req">*</span></label>
+            <input type="text" id="cSubject" name="cSubject" placeholder="e.g. Question about Web Development course" required>
+            <span class="error-msg">Please enter a subject for your message.</span>
+          </div>
+
+          <div class="field full">
+            <label for="cMessage">Your Message <span class="req">*</span></label>
+            <textarea id="cMessage" name="cMessage" placeholder="Tell us how we can help you." required></textarea>
+            <span class="error-msg">Please enter your message.</span>
+          </div>
+
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-whatsapp" id="sendWaBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 5h4l2 5-2.5 1.5a11 11 0 005 5L13 14l5 2v4a2 2 0 01-2 2A16 16 0 013 7a2 2 0 012-2z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            Continue on WhatsApp
+          </button>
+          <a class="btn btn-outline" href="mailto:marvellousoluwanifemi19@gmail.com">Use Email Instead</a>
+        </div>
+
+        <p class="confirm-msg" id="confirmMsg" role="status" aria-live="polite">
+          WhatsApp has been opened in a new tab with your message prefilled. Please review it and press Send in WhatsApp to complete this step. Your message has not been saved anywhere on this website.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTNERSHIP BANNER ============ -->
+<section id="partnerSection" class="section-tight">
+  <div class="container">
+    <div class="partner-banner">
+      <div>
+        <h3>Interested in Partnering With MarvyTech Institution?</h3>
+        <p>We welcome conversations with organisations, educators, volunteers, and individuals interested in supporting free technology education in Nigeria. Reach out to discuss possible collaboration.</p>
+      </div>
+      <a href="https://wa.me/2348103889326?text=Hello%20MarvyTech%20Institution.%20I%20am%20interested%20in%20discussing%20a%20possible%20partnership." target="_blank" rel="noopener" class="btn btn-lime">Start a Conversation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link">
+          <svg width="36" height="36" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <rect width="100" height="100" rx="22" fill="#152238"/>
+            <path d="M22 72V30L38 50L50 34L62 50L78 30V72" stroke="url(#gradFootContact)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="78" cy="30" r="5" fill="#A3E635"/>
+            <defs>
+              <linearGradient id="gradFootContact" x1="22" y1="30" x2="78" y2="72" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#22D3EE"/>
+                <stop offset="1" stop-color="#2563EB"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>MarvyTech Institution</span>
+        </a>
+        <span class="footer-tagline">Learn Skills. Build Your Future.</span>
+        <p>MarvyTech Institution provides free technology skills training to help beginners, students, graduates, and aspiring professionals build practical abilities for their future.</p>
+      </div>
+
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="resources.html">Learning Resources</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Get Involved</h5>
+        <ul>
+          <li><a href="register.html">Register for Free</a></li>
+          <li><a href="student-portal.html">Student Portal</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="https://wa.me/2348103889326" target="_blank" rel="noopener">WhatsApp: 0810 388 9326</a></li>
+          <li><a href="mailto:marvellousoluwanifemi19@gmail.com">marvellousoluwanifemi19@gmail.com</a></li>
+          <li><a href="#">Nigeria</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> MarvyTech Institution. All rights reserved. Registration details shared through WhatsApp are sent directly by you and are not stored on this website.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOAT ============ -->
+<a class="wa-float" href="https://wa.me/2348103889326?text=Hello%20MarvyTech%20Institution.%20I%20would%20like%20to%20enquire%20about%20your%20free%20technology%20training%20programmes." target="_blank" rel="noopener" aria-label="Chat with MarvyTech Institution on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.07-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" stroke="#fff" stroke-width="1.5"/>
+    <path d="M8.5 9.5c0 3 2.5 5.5 5.5 5.5.6 0 1-.1 1.3-.3.3-.2.5-.6.4-1l-.2-1-1.6-.5-.9 1c-1-.5-1.8-1.3-2.3-2.3l1-.9-.5-1.6-1-.2c-.4-.1-.8.1-1 .4-.2.3-.3.7-.3 1.3z" fill="#fff"/>
+  </svg>
+</a>
+
+<script>
+  // Mobile menu toggle
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mainNav = document.getElementById('mainNav');
+
+  hamburgerBtn.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    hamburgerBtn.classList.toggle('open');
+    hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  mainNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      hamburgerBtn.classList.remove('open');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Dynamic year
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+  // Contact form validation and WhatsApp redirect
+  const contactForm = document.getElementById('contactForm');
+  const confirmMsg = document.getElementById('confirmMsg');
+
+  function setFieldState(fieldId, isValid){
+    const field = document.getElementById(fieldId).closest('.field');
+    if(isValid){
+      field.classList.remove('invalid');
+    } else {
+      field.classList.add('invalid');
+    }
+  }
+
+  function isValidEmail(email){
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  contactForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    confirmMsg.classList.remove('show');
+
+    const name = document.getElementById('cName').value.trim();
+    const email = document.getElementById('cEmail').value.trim();
+    const subject = document.getElementById('cSubject').value.trim();
+    const message = document.getElementById('cMessage').value.trim();
+
+    let valid = true;
+
+    if(name === ''){ setFieldState('cName', false); valid = false; } else { setFieldState('cName', true); }
+    if(!isValidEmail(email)){ setFieldState('cEmail', false); valid = false; } else { setFieldState('cEmail', true); }
+    if(subject === ''){ setFieldState('cSubject', false); valid = false; } else { setFieldState('cSubject', true); }
+    if(message === ''){ setFieldState('cMessage', false); valid = false; } else { setFieldState('cMessage', true); }
+
+    if(!valid){
+      const firstInvalid = contactForm.querySelector('.invalid input, .invalid textarea');
+      if(firstInvalid){ firstInvalid.focus(); }
+      return;
+    }
+
+    const lines = [
+      "Hello MarvyTech Institution, I would like to get in touch.",
+      "",
+      "Name: " + name,
+      "Email: " + email,
+      "Subject: " + subject,
+      "Message: " + message
+    ];
+
+    const encodedMessage = encodeURIComponent(lines.join("\n"));
+    const waUrl = "https://wa.me/2348103889326?text=" + encodedMessage;
+
+    window.open(waUrl, "_blank", "noopener");
+    confirmMsg.classList.add('show');
+  });
+</script>
+
+</body>
+</html>

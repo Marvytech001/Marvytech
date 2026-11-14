@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequently Asked Questions | MarvyTech Institution</title>
+<meta name="description" content="Find answers to common questions about MarvyTech Institution's free technology skills training programmes in Nigeria.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%230B1220'/%3E%3Cpath d='M10 34V14L18 24L24 16L30 24L38 14V34' stroke='%2322D3EE' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{--navy:#0B1220;--blue:#2563EB;--cyan:#22D3EE;--lime:#A3E635;--white:#FFFFFF;--bg:#F5F7FB;--muted:#64748B;--radius:16px;--shadow:0 10px 30px rgba(11,18,32,0.08);--transition:0.25s ease;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--navy);background:var(--bg);line-height:1.6;overflow-x:hidden;}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px;}
+a{color:inherit;text-decoration:none;}
+img,svg{max-width:100%;display:block;}
+h1,h2,h3,h4{line-height:1.2;margin:0 0 16px;}
+p{margin:0 0 16px;color:var(--muted);}
+ul{list-style:none;margin:0;padding:0;}
+button{font-family:inherit;cursor:pointer;}
+.skip-link{position:absolute;left:-999px;top:auto;background:var(--blue);color:#fff;padding:12px 20px;border-radius:8px;z-index:2000;}
+.skip-link:focus{left:16px;top:16px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:50px;font-weight:600;font-size:1rem;border:2px solid transparent;transition:transform var(--transition),box-shadow var(--transition),background var(--transition);cursor:pointer;}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;box-shadow:0 8px 20px rgba(37,99,235,0.3);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(37,99,235,0.4);}
+.btn-secondary{background:#fff;color:var(--navy);border-color:var(--navy);}
+.btn-secondary:hover{background:var(--navy);color:#fff;}
+.btn-whatsapp{background:#25D366;color:#fff;}
+.btn-whatsapp:hover{background:#1fb855;}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:2px;}
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);box-shadow:0 2px 12px rgba(11,18,32,0.06);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:16px;}
+.logo-link{display:flex;align-items:center;gap:10px;}
+.logo-text{font-weight:800;font-size:1.1rem;color:var(--navy);line-height:1.1;}
+.logo-sub{display:block;font-size:0.65rem;font-weight:600;color:var(--muted);letter-spacing:0.5px;text-transform:uppercase;}
+.main-nav{display:flex;align-items:center;gap:28px;}
+.main-nav ul{display:flex;gap:22px;}
+.nav-link{font-weight:600;color:var(--navy);position:relative;padding:6px 2px;transition:color var(--transition);}
+.nav-link::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:2px;transition:width var(--transition);}
+.nav-link:hover::after,.nav-link.active::after{width:100%;}
+.nav-link.active{color:var(--blue);}
+.nav-cta{padding:10px 22px;font-size:0.95rem;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;}
+.hamburger span{width:26px;height:3px;background:var(--navy);border-radius:2px;transition:transform var(--transition),opacity var(--transition);}
+.hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+@media (max-width:960px){
+.main-nav{position:fixed;top:0;right:0;height:100vh;width:min(320px,85%);background:#fff;flex-direction:column;align-items:flex-start;padding:100px 28px 28px;box-shadow:-10px 0 30px rgba(0,0,0,0.1);transform:translateX(100%);transition:transform var(--transition);gap:28px;overflow-y:auto;}
+.main-nav.open{transform:translateX(0);}
+.main-nav ul{flex-direction:column;gap:20px;width:100%;}
+.nav-cta{width:100%;text-align:center;}
+.hamburger{display:flex;}
+}
+.site-footer{background:var(--navy);color:#cbd5e1;padding:64px 0 24px;margin-top:80px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;margin-bottom:40px;}
+.footer-brand .logo-text,.footer-brand .logo-sub{color:#fff;}
+.footer-tagline{color:var(--lime);font-weight:700;margin:12px 0 10px;}
+.footer-mission{color:#94a3b8;font-size:0.95rem;}
+.footer-links h3,.footer-contact h3{color:#fff;font-size:1.05rem;margin-bottom:18px;}
+.footer-links ul li,.footer-contact p{margin-bottom:10px;}
+.footer-links a,.footer-contact a{color:#cbd5e1;transition:color var(--transition);}
+.footer-links a:hover,.footer-contact a:hover{color:var(--cyan);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:0.85rem;color:#94a3b8;}
+@media (max-width:800px){.footer-grid{grid-template-columns:1fr;}}
+.whatsapp-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,0.25);z-index:999;transition:transform var(--transition);}
+.whatsapp-float:hover{transform:scale(1.08);}
+.section{padding:70px 0;}
+.section-header{text-align:center;max-width:760px;margin:0 auto 40px;}
+.eyebrow{display:inline-block;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:0.8rem;margin-bottom:12px;background:rgba(37,99,235,0.08);padding:6px 16px;border-radius:50px;}
+.faq-list{max-width:800px;margin:0 auto;}
+.faq-item{background:#fff;border-radius:14px;box-shadow:var(--shadow);margin-bottom:16px;overflow:hidden;border:1px solid rgba(11,18,32,0.05);}
+.faq-question{width:100%;background:none;border:none;text-align:left;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;font-size:1.05rem;font-weight:700;color:var(--navy);gap:16px;}
+.faq-question .icon{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:rgba(37,99,235,0.1);display:flex;align-items:center;justify-content:center;transition:transform var(--transition),background var(--transition);}
+.faq-question[aria-expanded="true"] .icon{transform:rotate(45deg);background:var(--blue);color:#fff;}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height var(--transition);}
+.faq-answer-inner{padding:0 24px 22px;}
+.faq-answer-inner p{margin:0;}
+.cta-box{text-align:center;margin-top:56px;}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px;}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link" aria-label="MarvyTech Institution home">
+      <svg width="40" height="40" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#22D3EE"/></linearGradient></defs>
+        <rect width="48" height="48" rx="12" fill="#0B1220"/>
+        <path d="M10 34V14L18 24L24 16L30 24L38 14V34" stroke="url(#g1)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="38" cy="14" r="2.6" fill="#A3E635"/>
+      </svg>
+      <span class="logo-text">MarvyTech<span class="logo-sub">Institution</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="courses.html" class="nav-link">Courses</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="resources.html" class="nav-link">Learning Resources</a></li>
+        <li><a href="student-portal.html" class="nav-link">Student Portal</a></li>
+        <li><a href="faq.html" class="nav-link active">FAQs</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="register.html" class="btn btn-primary nav-cta">Register for Free</a>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<section class="section">
+  <div class="container section-header">
+    <span class="eyebrow">FAQs</span>
+    <h1>Frequently Asked Questions</h1>
+    <p>Find answers to common questions about MarvyTech Institution, our training programmes, and how to get started.</p>
+  </div>
+
+  <div class="container">
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">Is the training free? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Our goal is to make technology skills training accessible without expensive training fees. Contact us to confirm the availability and details of your chosen programme.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">Do I need previous technology experience? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>No. Many of our intended programmes are designed with beginners in mind. You can enquire about the best starting point for your chosen skill.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">Who can register? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Students, graduates, aspiring freelancers, job seekers, career changers, and other motivated learners are welcome to express their interest.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">Can I learn online? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Online learning is one of our intended training options. Contact us to confirm the availability and arrangements for your chosen programme.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">Do you offer physical training? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Physical training may be available depending on the programme and arrangements. Contact us for current details.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">Will I receive a certificate? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Certificate availability depends on the programme and its arrangements. Please contact us for confirmation before registering.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">Will learning a skill guarantee me a job? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>No training programme can guarantee employment or income. Our goal is to help learners develop useful skills that may support their career development and future opportunities.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">How do I register? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Visit the <a href="register.html" style="color:var(--blue);font-weight:600;">Registration page</a> and complete the form. You can then continue through WhatsApp or contact us by email.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">What happens after I register? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>We can provide information about programme availability, schedules, and next steps. Registration should not be presented as automatic confirmation of a training place.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">Can I ask about a course that is not listed? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Yes. Contact us to ask about additional technology skills that may be available.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">Do I need a laptop? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Requirements can vary by course. Contact us to discuss the equipment and resources recommended for your preferred programme.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <h3><button class="faq-question" aria-expanded="false">How can I contact MarvyTech Institution? <span class="icon">+</span></button></h3>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>You can reach us through WhatsApp at 08103889326 or by email at <a href="mailto:marvellousoluwanifemi19@gmail.com" style="color:var(--blue);">marvellousoluwanifemi19@gmail.com</a>.</p></div></div>
+      </div>
+
+    </div>
+
+    <div class="cta-box">
+      <h2>Still Have Questions?</h2>
+      <p>Explore our courses or get in touch with us directly.</p>
+      <div class="cta-actions">
+        <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+        <a href="register.html" class="btn btn-secondary">Register for Free</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo-link" aria-label="MarvyTech Institution home">
+        <svg width="36" height="36" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="48" height="48" rx="12" fill="#17284a"/>
+          <path d="M10 34V14L18 24L24 16L30 24L38 14V34" stroke="#22D3EE" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="38" cy="14" r="2.6" fill="#A3E635"/>
+        </svg>
+        <span class="logo-text">MarvyTech<span class="logo-sub">Institution</span></span>
+      </a>
+      <p class="footer-tagline">Learn Skills. Build Your Future.</p>
+      <p class="footer-mission">MarvyTech Institution provides free technology skills training to help beginners, students, graduates, and aspiring professionals build practical abilities for the digital world.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="resources.html">Learning Resources</a></li>
+        <li><a href="student-portal.html">Student Portal</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register for Free</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>WhatsApp: <a href="https://wa.me/2348103889326">0810 388 9326</a></p>
+      <p>Email: <a href="mailto:marvellousoluwanifemi19@gmail.com">marvellousoluwanifemi19@gmail.com</a></p>
+      <p>Location: Nigeria</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/2348103889326?text=Hello%20MarvyTech%20Institution.%20I%20would%20like%20to%20enquire%20about%20your%20free%20technology%20training%20programmes." target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>&copy; <span id="year"></span> MarvyTech Institution. All rights reserved.</p>
+    <p class="privacy-note">Your details are only used to respond to your enquiries.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348103889326?text=Hello%20MarvyTech%20Institution.%20I%20would%20like%20to%20enquire%20about%20your%20free%20technology%20training%20programmes." class="whatsapp-float" aria-label="Chat with MarvyTech Institution on WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.6 6.1 1.6h.2c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.6 1.2 1.2-4.5-.2-.4C5.7 17.8 5.2 16 5.2 14.1c0-5.9 4.9-10.8 10.8-10.8s10.8 4.9 10.8 10.8S21.9 24.8 16 24.8z"/></svg>
+</a>
+
+<script>
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mainNav = document.getElementById('mainNav');
+hamburgerBtn.addEventListener('click', function(){
+  const isOpen = mainNav.classList.toggle('open');
+  hamburgerBtn.classList.toggle('open');
+  hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
+mainNav.querySelectorAll('a').forEach(function(link){
+  link.addEventListener('click', function(){
+    mainNav.classList.remove('open');
+    hamburgerBtn.classList.remove('open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+  });
+});
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Accessible FAQ accordion
+document.querySelectorAll('.faq-question').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    const answer = btn.parentElement.nextElementSibling;
+    btn.setAttribute('aria-expanded', String(!expanded));
+    if (!expanded) {
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    } else {
+      answer.style.maxHeight = '0px';
+    }
+  });
+});
+</script>
+</body>
+</html>

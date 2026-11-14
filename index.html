@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarvyTech Institution | Free Tech Training in Nigeria</title>
+<meta name="description" content="MarvyTech Institution offers free technology skills training in Nigeria for beginners, students, graduates and aspiring freelancers. Learn web development, design, data and more.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%230B1220'/%3E%3Cpath d='M10 34V14L18 24L24 16L30 24L38 14V34' stroke='%2322D3EE' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{--navy:#0B1220;--blue:#2563EB;--cyan:#22D3EE;--lime:#A3E635;--white:#FFFFFF;--bg:#F5F7FB;--muted:#64748B;--radius:16px;--shadow:0 10px 30px rgba(11,18,32,0.08);--transition:0.25s ease;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--navy);background:var(--bg);line-height:1.6;overflow-x:hidden;}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px;}
+a{color:inherit;text-decoration:none;}
+img,svg{max-width:100%;display:block;}
+h1,h2,h3,h4{line-height:1.2;margin:0 0 16px;}
+p{margin:0 0 16px;color:var(--muted);}
+ul{list-style:none;margin:0;padding:0;}
+button{font-family:inherit;cursor:pointer;}
+.skip-link{position:absolute;left:-999px;top:auto;background:var(--blue);color:#fff;padding:12px 20px;border-radius:8px;z-index:2000;}
+.skip-link:focus{left:16px;top:16px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:50px;font-weight:600;font-size:1rem;border:2px solid transparent;transition:transform var(--transition),box-shadow var(--transition),background var(--transition);cursor:pointer;}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;box-shadow:0 8px 20px rgba(37,99,235,0.3);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(37,99,235,0.4);}
+.btn-secondary{background:#fff;color:var(--navy);border-color:var(--navy);}
+.btn-secondary:hover{background:var(--navy);color:#fff;}
+.btn-whatsapp{background:#25D366;color:#fff;}
+.btn-whatsapp:hover{background:#1fb855;}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:2px;}
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);box-shadow:0 2px 12px rgba(11,18,32,0.06);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:16px;}
+.logo-link{display:flex;align-items:center;gap:10px;}
+.logo-text{font-weight:800;font-size:1.1rem;color:var(--navy);line-height:1.1;}
+.logo-sub{display:block;font-size:0.65rem;font-weight:600;color:var(--muted);letter-spacing:0.5px;text-transform:uppercase;}
+.main-nav{display:flex;align-items:center;gap:28px;}
+.main-nav ul{display:flex;gap:22px;}
+.nav-link{font-weight:600;color:var(--navy);position:relative;padding:6px 2px;transition:color var(--transition);}
+.nav-link::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:2px;transition:width var(--transition);}
+.nav-link:hover::after,.nav-link.active::after{width:100%;}
+.nav-link.active{color:var(--blue);}
+.nav-cta{padding:10px 22px;font-size:0.95rem;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;}
+.hamburger span{width:26px;height:3px;background:var(--navy);border-radius:2px;transition:transform var(--transition),opacity var(--transition);}
+.hamburger.open span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+@media (max-width:960px){
+.main-nav{position:fixed;top:0;right:0;height:100vh;width:min(320px,85%);background:#fff;flex-direction:column;align-items:flex-start;padding:100px 28px 28px;box-shadow:-10px 0 30px rgba(0,0,0,0.1);transform:translateX(100%);transition:transform var(--transition);gap:28px;overflow-y:auto;}
+.main-nav.open{transform:translateX(0);}
+.main-nav ul{flex-direction:column;gap:20px;width:100%;}
+.nav-cta{width:100%;text-align:center;}
+.hamburger{display:flex;}
+}
+.site-footer{background:var(--navy);color:#cbd5e1;padding:64px 0 24px;margin-top:80px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;margin-bottom:40px;}
+.footer-brand .logo-text,.footer-brand .logo-sub{color:#fff;}
+.footer-tagline{color:var(--lime);font-weight:700;margin:12px 0 10px;}
+.footer-mission{color:#94a3b8;font-size:0.95rem;}
+.footer-links h3,.footer-contact h3{color:#fff;font-size:1.05rem;margin-bottom:18px;}
+.footer-links ul li,.footer-contact p{margin-bottom:10px;}
+.footer-links a,.footer-contact a{color:#cbd5e1;transition:color var(--transition);}
+.footer-links a:hover,.footer-contact a:hover{color:var(--cyan);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:0.85rem;color:#94a3b8;}
+@media (max-width:800px){.footer-grid{grid-template-columns:1fr;}}
+.whatsapp-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,0.25);z-index:999;transition:transform var(--transition);}
+.whatsapp-float:hover{transform:scale(1.08);}
+.section{padding:80px 0;}
+.section-header{text-align:center;max-width:720px;margin:0 auto 48px;}
+.eyebrow{display:inline-block;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:0.8rem;margin-bottom:12px;background:rgba(37,99,235,0.08);padding:6px 16px;border-radius:50px;}
+.card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:32px;transition:transform var(--transition),box-shadow var(--transition);border:1px solid rgba(11,18,32,0.05);}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(11,18,32,0.12);}
+.grid{display:grid;gap:28px;}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:960px){.grid-3,.grid-4{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:600px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}}
+.icon-badge{width:56px;height:56px;border-radius:14px;background:rgba(37,99,235,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--blue);}
+/* Hero */
+.hero{padding:70px 0 60px;background:linear-gradient(180deg,#eef3ff 0%,var(--bg) 100%);overflow:hidden;}
+.hero-inner{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;}
+.hero h1{font-size:clamp(2rem,4vw,3rem);color:var(--navy);}
+.hero .lead{font-size:1.1rem;color:var(--muted);max-width:540px;}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin:28px 0 16px;}
+.hero-support{font-weight:600;color:var(--blue);}
+.hero-visual{position:relative;height:420px;}
+.laptop{position:absolute;inset:0;margin:auto;width:320px;}
+.float-chip{position:absolute;background:#fff;border-radius:12px;box-shadow:var(--shadow);padding:12px 16px;font-weight:700;font-size:0.85rem;display:flex;align-items:center;gap:8px;animation:floaty 4s ease-in-out infinite;}
+.float-chip.c1{top:10%;left:0;color:var(--blue);animation-delay:0s;}
+.float-chip.c2{top:45%;right:0;color:#0ea5a0;animation-delay:1s;}
+.float-chip.c3{bottom:8%;left:8%;color:#a3350f;animation-delay:2s;}
+@keyframes floaty{0%,100%{transform:translateY(0px);}50%{transform:translateY(-14px);}}
+@media (max-width:960px){.hero-inner{grid-template-columns:1fr;}.hero-visual{height:320px;margin-top:20px;}}
+/* Welcome */
+.welcome{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.welcome-visual{background:linear-gradient(135deg,var(--navy),#15213a);border-radius:24px;padding:40px;color:#fff;}
+.welcome-visual h3{color:var(--cyan);}
+.welcome-visual p{color:#cbd5e1;}
+@media (max-width:860px){.welcome{grid-template-columns:1fr;}}
+/* Course card */
+.course-card .topics{font-size:0.85rem;color:var(--muted);margin-bottom:16px;}
+.badge-beginner{display:inline-block;background:rgba(163,230,53,0.2);color:#4d7c0f;font-size:0.72rem;font-weight:700;padding:4px 10px;border-radius:50px;margin-bottom:12px;}
+/* steps */
+.steps{counter-reset:step;}
+.step{position:relative;padding-left:60px;}
+.step::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;}
+/* CTA */
+.cta-final{background:linear-gradient(135deg,var(--navy),#17284a);color:#fff;border-radius:28px;padding:64px 40px;text-align:center;margin:0 24px;}
+.cta-final h2{color:#fff;}
+.cta-final p{color:#cbd5e1;max-width:620px;margin:0 auto 28px;}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.placeholder-note{text-align:center;font-size:0.85rem;color:var(--muted);font-style:italic;margin-top:12px;}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link" aria-label="MarvyTech Institution home">
+      <svg width="40" height="40" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+        <defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#22D3EE"/></linearGradient></defs>
+        <rect width="48" height="48" rx="12" fill="#0B1220"/>
+        <path d="M10 34V14L18 24L24 16L30 24L38 14V34" stroke="url(#g1)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="38" cy="14" r="2.6" fill="#A3E635"/>
+      </svg>
+      <span class="logo-text">MarvyTech<span class="logo-sub">Institution</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="courses.html" class="nav-link">Courses</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="resources.html" class="nav-link">Learning Resources</a></li>
+        <li><a href="student-portal.html" class="nav-link">Student Portal</a></li>
+        <li><a href="faq.html" class="nav-link">FAQs</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="register.html" class="btn btn-primary nav-cta">Register for Free</a>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="eyebrow">Free Technology Skills Training</span>
+      <h1>Learn Digital Skills for Free. Build a Future Full of Possibilities.</h1>
+      <p class="lead">MarvyTech Institution helps beginners, students, graduates, and aspiring professionals learn practical technology skills without the burden of expensive training fees. Start learning, build real projects, and take your next step towards a brighter future.</p>
+      <div class="hero-actions">
+        <a href="courses.html" class="btn btn-primary">Explore Our Courses</a>
+        <a href="register.html" class="btn btn-secondary">Register for Free</a>
+      </div>
+      <p class="hero-support">Beginner friendly learning. Practical skills. New possibilities.</p>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg class="laptop" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="40" y="20" width="220" height="140" rx="12" fill="#0B1220"/>
+        <rect x="52" y="32" width="196" height="116" rx="4" fill="url(#screenGrad)"/>
+        <defs><linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#0B1220"/></linearGradient></defs>
+        <rect x="68" y="50" width="90" height="8" rx="4" fill="#22D3EE"/>
+        <rect x="68" y="68" width="140" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+        <rect x="68" y="82" width="110" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+        <rect x="68" y="100" width="70" height="30" rx="6" fill="#A3E635"/>
+        <path d="M10 180 L290 180 L270 205 L30 205 Z" fill="#1b2944"/>
+      </svg>
+      <div class="float-chip c1"><span>&lt;/&gt;</span> Web Dev</div>
+      <div class="float-chip c2"><span>&#9711;</span> Design</div>
+      <div class="float-chip c3"><span>&#9650;</span> Data</div>
+    </div>
+  </div>
+</section>
+
+<section class="section welcome-section">
+  <div class="container welcome">
+    <div>
+      <span class="eyebrow">Our Mission</span>
+      <h2>Making Technology Education More Accessible</h2>
+      <p>MarvyTech Institution exists to reduce the financial barriers that stop people from learning useful technology skills. We believe everyone, regardless of background, deserves a real opportunity to learn, practise, and grow in the digital world.</p>
+      <p>Whether you are a complete beginner, a student, a graduate, or someone exploring freelancing, we want to help you build practical abilities that support your personal and professional goals.</p>
+      <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+    </div>
+    <div class="welcome-visual">
+      <h3>Why it matters</h3>
+      <p>Expensive training should not be the reason someone misses an opportunity to learn. By offering free, practical, beginner friendly training, we help open doors that may otherwise stay closed.</p>
+      <p>Every skill learned is a step towards greater confidence, independence, and opportunity.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="featured-courses">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Featured Courses</span>
+      <h2>Choose a Skill to Start Learning</h2>
+      <p>These are just a few of the technology skills you can explore at MarvyTech Institution.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card course-card">
+        <div class="icon-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6L2 12L8 18M16 6L22 12L16 18"/></svg></div>
+        <span class="badge-beginner">Beginner Friendly</span>
+        <h3>Web Development</h3>
+        <p>Learn how websites are structured and designed, then work towards building your own web projects.</p>
+        <a href="register.html?course=Web%20Development" class="btn btn-secondary">Register for This Course</a>
+      </div>
+      <div class="card course-card">
+        <div class="icon-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 15l3-3-3-3M13 15h4"/></svg></div>
+        <span class="badge-beginner">Beginner Friendly</span>
+        <h3>Graphic Design</h3>
+        <p>Explore design principles, colour, typography, and layout to create visual materials.</p>
+        <a href="register.html?course=Graphic%20Design" class="btn btn-secondary">Register for This Course</a>
+      </div>
+      <div class="card course-card">
+        <div class="icon-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17h4l10-10 -4-4L3 13z"/><path d="M3 21h18"/></svg></div>
+        <span class="badge-beginner">Beginner Friendly</span>
+        <h3>Digital Marketing</h3>
+        <p>Learn the fundamentals of online marketing, content strategy, and social media engagement.</p>
+        <a href="register.html?course=Digital%20Marketing" class="btn btn-secondary">Register for This Course</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="courses.html" class="btn btn-primary">View All Courses</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Why MarvyTech</span>
+      <h2>Why Choose MarvyTech Institution?</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card"><div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3>Free Learning Opportunities</h3><p>Access practical technology training without expensive fees standing in your way.</p></div>
+      <div class="card"><div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Beginner Friendly Approach</h3><p>Programmes designed to welcome people with no previous technology experience.</p></div>
+      <div class="card"><div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M4 15l4-4 4 4 6-8"/></svg></div><h3>Practical Skill Development</h3><p>Focus on hands on practice so you can build real, usable abilities.</p></div>
+      <div class="card"><div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M17 11a3 3 0 1 0 0-6"/></svg></div><h3>Career and Freelancing Prep</h3><p>Develop skills that can support career growth and freelance opportunities.</p></div>
+      <div class="card"><div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8"/></svg></div><h3>Online and Physical Options</h3><p>Training delivered online or physically, depending on programme availability.</p></div>
+      <div class="card"><div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><h3>Supportive Learning Community</h3><p>Learn alongside other motivated learners in an encouraging environment.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">How It Works</span>
+      <h2>Your Path to Learning a New Skill</h2>
+    </div>
+    <div class="grid grid-4 steps">
+      <div class="step"><h3>Choose a Skill</h3><p>Browse our course catalogue and find a skill that interests you.</p></div>
+      <div class="step"><h3>Register Your Interest</h3><p>Fill out our simple registration form with your details.</p></div>
+      <div class="step"><h3>Receive Information</h3><p>We share details about available training sessions.</p></div>
+      <div class="step"><h3>Learn and Grow</h3><p>Practise consistently and build your skills and portfolio.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="register.html" class="btn btn-primary">Start Registration</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#fff;">
+  <div class="container grid grid-2" style="align-items:center;">
+    <div>
+      <span class="eyebrow">Mission and Vision</span>
+      <h2>What We Are Working Towards</h2>
+      <p><strong>Mission:</strong> Make technology education more accessible by providing free skills training and supporting learners as they develop practical abilities.</p>
+      <p><strong>Vision:</strong> A future where more people can access technology education, develop valuable skills, and pursue opportunities in the digital economy.</p>
+      <a href="about.html" class="btn btn-secondary">Read Our Full Story</a>
+    </div>
+    <div class="card">
+      <div class="icon-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 22h20L12 2z"/></svg></div>
+      <h3>Built on Access and Opportunity</h3>
+      <p>We focus on removing cost as a barrier to learning, so that willingness to learn is all that is required to begin.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Learning Resources</span>
+      <h2>Start Exploring Free Learning Content</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card"><h3>How to Start Learning Web Development as a Beginner</h3><p>A practical starting point for anyone new to building websites.</p><a href="resources.html" class="btn btn-secondary">Read More</a></div>
+      <div class="card"><h3>Understanding UI/UX Design</h3><p>Discover what UI/UX design means and why it matters.</p><a href="resources.html" class="btn btn-secondary">Read More</a></div>
+      <div class="card"><h3>Cybersecurity Basics Everyone Should Know</h3><p>Simple, practical digital safety habits for everyday use.</p><a href="resources.html" class="btn btn-secondary">Read More</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-final">
+      <h2>Your Next Opportunity Could Start With One New Skill.</h2>
+      <p>You do not need to know everything before you begin. Choose a skill, take the first step, and start building your knowledge.</p>
+      <div class="cta-actions">
+        <a href="register.html" class="btn btn-primary">Register for Free</a>
+        <a href="https://wa.me/2348103889326?text=Hello%20MarvyTech%20Institution.%20I%20would%20like%20to%20enquire%20about%20your%20free%20technology%20training%20programmes." class="btn btn-whatsapp" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo-link" aria-label="MarvyTech Institution home">
+        <svg width="36" height="36" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+          <rect width="48" height="48" rx="12" fill="#17284a"/>
+          <path d="M10 34V14L18 24L24 16L30 24L38 14V34" stroke="#22D3EE" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="38" cy="14" r="2.6" fill="#A3E635"/>
+        </svg>
+        <span class="logo-text">MarvyTech<span class="logo-sub">Institution</span></span>
+      </a>
+      <p class="footer-tagline">Learn Skills. Build Your Future.</p>
+      <p class="footer-mission">MarvyTech Institution provides free technology skills training to help beginners, students, graduates, and aspiring professionals build practical abilities for the digital world.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="resources.html">Learning Resources</a></li>
+        <li><a href="student-portal.html">Student Portal</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register for Free</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>WhatsApp: <a href="https://wa.me/2348103889326">0810 388 9326</a></p>
+      <p>Email: <a href="mailto:marvellousoluwanifemi19@gmail.com">marvellousoluwanifemi19@gmail.com</a></p>
+      <p>Location: Nigeria</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/2348103889326?text=Hello%20MarvyTech%20Institution.%20I%20would%20like%20to%20enquire%20about%20your%20free%20technology%20training%20programmes." target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>&copy; <span id="year"></span> MarvyTech Institution. All rights reserved.</p>
+    <p class="privacy-note">Your details are only used to respond to your enquiries. See our privacy notice on the Registration page.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348103889326?text=Hello%20MarvyTech%20Institution.%20I%20would%20like%20to%20enquire%20about%20your%20free%20technology%20training%20programmes." class="whatsapp-float" aria-label="Chat with MarvyTech Institution on WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.6 6.1 1.6h.2c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.6 1.2 1.2-4.5-.2-.4C5.7 17.8 5.2 16 5.2 14.1c0-5.9 4.9-10.8 10.8-10.8s10.8 4.9 10.8 10.8S21.9 24.8 16 24.8z"/><path d="M21.6 17.4c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script>
+// Mobile navigation toggle
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mainNav = document.getElementById('mainNav');
+hamburgerBtn.addEventListener('click', function(){
+  const isOpen = mainNav.classList.toggle('open');
+  hamburgerBtn.classList.toggle('open');
+  hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
+mainNav.querySelectorAll('a').forEach(function(link){
+  link.addEventListener('click', function(){
+    mainNav.classList.remove('open');
+    hamburgerBtn.classList.remove('open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+  });
+});
+// Dynamic year
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
