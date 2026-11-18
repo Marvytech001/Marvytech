@@ -1,0 +1,16 @@
+# robots.txt for MarvyTech Institution
+# Learn Skills. Build Your Future.
+# Free technology skills training in Nigeria
+# WhatsApp: 08103889326 | https://wa.me/2348103889326
+
+# Allow all search engines to crawl and index this website
+User-agent: *
+Allow: /
+
+# There are no private or admin areas on this website, so nothing is blocked.
+# This site is a single-page website, so all content lives on the home page.
+
+# Tell search engines where the sitemap is located.
+# Create a file named sitemap.xml next to index.html, then replace the
+# placeholder below with your real GitHub Pages address.
+Sitemap: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/sitemap.xml
